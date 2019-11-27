@@ -6,7 +6,7 @@
 /*   By: nhochstr <nhochstr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 09:49:20 by nhochstr          #+#    #+#             */
-/*   Updated: 2019/10/17 14:32:30 by nhochstr         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:20:46 by nhochstr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ size_t	ft_strlcat(
 	size_t	l;
 
 	j = 0;
-	lenghdst = ft_strlen((char *)dst);
-	lenghsrc = ft_strlen((char *)src);
+	lenghdst = ft_strlen(dst);
+	lenghsrc = ft_strlen(src);
 	l = lenghdst;
 	if (dstsize == 0)
 		return (lenghsrc);

@@ -6,7 +6,7 @@
 /*   By: nhochstr <nhochstr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 09:49:20 by nhochstr          #+#    #+#             */
-/*   Updated: 2019/10/17 15:00:46 by nhochstr         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:21:17 by nhochstr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s || !f)
 		return (NULL);
-	if (!(sptr = (char*)malloc(sizeof(char) * (ft_strlen((char*)s) + 1))))
+	if (!(sptr = (char*)malloc(sizeof(char) * (ft_strlen(s) + 1))))
 		return (NULL);
 	index = 0;
 	while (s[index])

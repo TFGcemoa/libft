@@ -6,7 +6,7 @@
 /*   By: nhochstr <nhochstr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 09:49:20 by nhochstr          #+#    #+#             */
-/*   Updated: 2019/11/27 12:22:30 by nhochstr         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:20:28 by nhochstr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	leng = ft_strlen((char*)s1) + ft_strlen((char*)s2);
+	leng = ft_strlen(s1) + ft_strlen(s2);
 	i = 0;
 	if (!(ptr = malloc((leng + 1) * sizeof(char))))
 		return (NULL);
