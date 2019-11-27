@@ -6,7 +6,7 @@
 /*   By: nhochstr <nhochstr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 14:07:32 by nhochstr          #+#    #+#             */
-/*   Updated: 2019/11/27 14:15:52 by nhochstr         ###   ########.fr       */
+/*   Updated: 2019/11/27 18:09:19 by nhochstr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-unsigned long	ft_strlen(char *str);
+size_t			ft_strlen(const char *s);
 int				ft_isupper(int c);
 int				ft_islower(int c);
 int				ft_isalpha(int c);
