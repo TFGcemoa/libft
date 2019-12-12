@@ -6,7 +6,7 @@
 /*   By: nhochstr <nhochstr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 09:49:20 by nhochstr          #+#    #+#             */
-/*   Updated: 2019/11/27 20:20:09 by nhochstr         ###   ########.fr       */
+/*   Updated: 2019/12/12 15:28:02 by nhochstr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *s)
 	char	*ptr;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	if (!(ptr = malloc(ft_strlen(s) * sizeof(char) + 1)))
 		return (NULL);
